@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<odoo> 
+<!-- Comentario en la Views --> 
+     <record id="view_ej_mimenu_form" model="ir.ui.view"> 
+        <field name="name">ej.luis.form</field> 
+        <field name="model">ej.luis</field> 
+        <field name="arch" type="xml"> 
+            <form string="Listado de Luis"> 
+                <group> 
+                    <field name="Nombre"/> 
+                    <!--field name="Empresa"/-->
+                    <field name="Edad"/> 
+                    <!--field name="Id"/> 
+                    <field name="NIF"/> 
+                    <field name="Calle"/> 
+                    <field name="CP"/> 
+                    <field name="Ciudad"/--> 
+
+                </group> 
+            </form> 
+        </field> 
+    </record> 
+     <record id="view_tree_mimenu" model="ir.ui.view"> 
+        <field name="name">ej.luis.tree</field> 
+        <field name="model">ej.luis</field> 
+        <field name="arch" type="xml"> 
+           <tree> 
+                    <field name="Nombre"/> 
+                    <!--field name="Empresa"/--> 
+                    <field name="Edad"/> 
+                    <!--field name="Id"/--> 
+           </tree> 
+        </field> 
+    </record> 
+    <record model="ir.actions.act_window" id="act_ej_mimenu"> 
+        <field name="name">Empresas</field> 
+        <field name="res_model">ej.luis</field> 
+        <field name="view_mode">tree,form</field> 
+        <field name="view_id"  ref="view_tree_mimenu" /> 
+    </record> 
+<!--  Declaramos los menu --> 
+<menuitem id="ej_mimenu_menu" name="Empresas" web_icon="stock,static/description/icon.png" sequence="10"/> 
+<menuitem id="submenu_ej_mimenu_menu" name="Empresas" sequence="10" parent="ej_mimenu_menu"/> 
+<menuitem id="submenu_ej_mimenu_action" name="Empresas" sequence="10" parent="submenu_ej_mimenu_menu" action="act_ej_mimenu"/> 
+</odoo> 

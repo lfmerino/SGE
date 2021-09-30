@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<odoo> 
+<!-- Comentario en la Views --> 
+     <record id="view_ej_dam1_form" model="ir.ui.view"> 
+        <field name="name">ej.dam1.form</field> 
+        <field name="model">ej.dam1</field> 
+        <field name="arch" type="xml"> 
+            <form string="Listado de Empresa"> 
+                <group> 
+                    <!--field name="Id"/--> 
+                    <field name="Nombre"/> 
+                    <field name="NIF"/> 
+                    <field name="Idioma"/> 
+                    <field name="Calle"/> 
+                    <field name="CP"/> 
+                    <field name="Ciudad"/> 
+                    <field name="Telefono"/> 
+                    <field name="Email"/> 
+                    <field name="web"/> 
+                </group> 
+            </form> 
+        </field> 
+    </record> 
+     <record id="view_tree_dam1" model="ir.ui.view"> 
+        <field name="name">ej.dam1.tree</field> 
+        <field name="model">ej.dam1</field> 
+        <field name="arch" type="xml"> 
+           <tree> 
+                    <!--field name="Id"/--> 
+                    <field name="Nombre"/> 
+                    <field name="NIF"/> 
+                    <field name="Idioma"/> 
+                    <field name="Calle"/> 
+                    <field name="CP"/> 
+                    <field name="Ciudad"/> 
+                    <field name="Telefono"/> 
+                    <field name="Email"/> 
+                    <field name="web"/> 
+           </tree> 
+        </field> 
+    </record> 
+    <record model="ir.actions.act_window" id="act_ej_dam1"> 
+        <field name="name">dam1</field> 
+        <field name="res_model">ej.dam1</field> 
+        <field name="view_mode">tree,form</field> 
+        <field name="view_id"  ref="view_tree_dam1" /> 
+    </record> 
+<!--  Declaramos los menu --> 
+<menuitem id="ej_dam1_menu" name="Empresa" web_icon="stock,static/description/icon.png" sequence="10"/> 
+<menuitem id="submenu_ej_dam1_menu" name="Empresa" sequence="10" parent="ej_dam1_menu"/> 
+<menuitem id="submenu_ej_dam1_action" name="Empresa" sequence="10" parent="submenu_ej_dam1_menu" action="act_ej_dam1"/> 
+</odoo> 

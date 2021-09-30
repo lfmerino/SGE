@@ -1,0 +1,372 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns='http://www.w3.org/2005/Atom' xmlns:apps='http://schemas.google.com/apps/2006'>
+	<title>Mail Filters</title>
+	<id>tag:mail.google.com,2008:filters:z0000001595174856075*7938583813627151337,z0000001595174897582*1746739103250145449</id>
+	<updated>2021-01-03T18:59:45Z</updated>
+	<author>
+		<name>luisfrancisco.merino Brianda</name>
+		<email>lmerino@coitt.es</email>
+	</author>	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001595174856075*7938583813627151337</id>
+		<updated>2021-01-03T18:59:45Z</updated>
+		<content></content>
+		<apps:property name='from' value='noresponder@online.tendam.es'/>
+		<apps:property name='label' value='Revisar'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+    	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001595174856075*7938583813627151337</id>
+		<updated>2021-01-03T18:59:45Z</updated>
+		<content></content>
+		<apps:property name='from' value='elpais@newsletter.elpais.com'/>
+		<apps:property name='label' value='Revisar'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+    	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001595174856075*7938583813627151337</id>
+		<updated>2021-01-03T18:59:45Z</updated>
+		<content></content>
+		<apps:property name='from' value='update@email.flixbus.com'/>
+		<apps:property name='label' value='Revisar'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+    	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001595174856075*7938583813627151337</id>
+		<updated>2021-01-03T18:59:45Z</updated>
+		<content></content>
+		<apps:property name='from' value='info@campusmagister.com'/>
+		<apps:property name='label' value='Revisar'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+    	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001595174856075*7938583813627151337</id>
+		<updated>2021-01-03T18:59:45Z</updated>
+		<content></content>
+		<apps:property name='from' value='noreply@informa.mutua.es'/>
+		<apps:property name='label' value='Revisar'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+    	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001595174856075*7938583813627151337</id>
+		<updated>2021-01-03T18:59:45Z</updated>
+		<content></content>
+		<apps:property name='from' value='peugeot@contactpeugeot.com'/>
+		<apps:property name='label' value='Revisar'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+    	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001595174856075*7938583813627151337</id>
+		<updated>2021-01-03T18:59:45Z</updated>
+		<content></content>
+		<apps:property name='from' value='novedades@coitt.es'/>
+		<apps:property name='label' value='Revisar'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+    	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001595174856075*7938583813627151337</id>
+		<updated>2021-01-03T18:59:45Z</updated>
+		<content></content>
+		<apps:property name='from' value='contenidos@softdoit.com'/>
+		<apps:property name='label' value='Revisar'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+    	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001595174856075*7938583813627151337</id>
+		<updated>2021-01-03T18:59:45Z</updated>
+		<content></content>
+		<apps:property name='from' value='tecomunicamos@leroymerlin.es'/>
+		<apps:property name='label' value='Revisar'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+    	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001595174856075*7938583813627151337</id>
+		<updated>2021-01-03T18:59:45Z</updated>
+		<content></content>
+		<apps:property name='from' value='marketing@acronis.com'/>
+		<apps:property name='label' value='Revisar'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+    	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001595174856075*7938583813627151337</id>
+		<updated>2021-01-03T18:59:45Z</updated>
+		<content></content>
+		<apps:property name='from' value='info@etwinning.net'/>
+		<apps:property name='label' value='Revisar'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+    	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001595174856075*7938583813627151337</id>
+		<updated>2021-01-03T18:59:45Z</updated>
+		<content></content>
+		<apps:property name='from' value='marketingcrm@hyundai.es'/>
+		<apps:property name='label' value='Revisar'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+    	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001595174856075*7938583813627151337</id>
+		<updated>2021-01-03T18:59:45Z</updated>
+		<content></content>
+		<apps:property name='from' value='tecuidamos@email.mapfretecuidamos.es'/>
+		<apps:property name='label' value='Revisar'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+    	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001595174856075*7938583813627151337</id>
+		<updated>2021-01-03T18:59:45Z</updated>
+		<content></content>
+		<apps:property name='from' value='customer-reviews-messages@amazon.es'/>
+		<apps:property name='label' value='Revisar'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+    	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001595174856075*7938583813627151337</id>
+		<updated>2021-01-03T18:59:45Z</updated>
+		<content></content>
+		<apps:property name='from' value='customer-reviews-messages@amazon.es'/>
+		<apps:property name='label' value='Revisar'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+    	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001595174856075*7938583813627151337</id>
+		<updated>2021-01-03T18:59:45Z</updated>
+		<content></content>
+		<apps:property name='from' value='info@campusmagister.com'/>
+		<apps:property name='label' value='Revisar'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+    	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001595174856075*7938583813627151337</id>
+		<updated>2021-01-03T18:59:45Z</updated>
+		<content></content>
+		<apps:property name='from' value='updates@academia-mail.com'/>
+		<apps:property name='label' value='Revisar'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+    	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001595174856075*7938583813627151337</id>
+		<updated>2021-01-03T18:59:45Z</updated>
+		<content></content>
+		<apps:property name='from' value='info@electronica-embajadores.com'/>
+		<apps:property name='label' value='Revisar'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+    	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001595174856075*7938583813627151337</id>
+		<updated>2021-01-03T18:59:45Z</updated>
+		<content></content>
+		<apps:property name='from' value='noreply@rtt-news.com'/>
+		<apps:property name='label' value='Revisar'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+    	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001595174856075*7938583813627151337</id>
+		<updated>2021-01-03T18:59:45Z</updated>
+		<content></content>
+		<apps:property name='from' value='info@instituto-europeo.com'/>
+		<apps:property name='label' value='Revisar'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+    	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001595174856075*7938583813627151337</id>
+		<updated>2021-01-03T18:59:45Z</updated>
+		<content></content>
+		<apps:property name='from' value='clientes@marketing.naturgy.com'/>
+		<apps:property name='label' value='Revisar'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+    	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001595174856075*7938583813627151337</id>
+		<updated>2021-01-03T18:59:45Z</updated>
+		<content></content>
+		<apps:property name='from' value='comunicacion@euromaster.com'/>
+		<apps:property name='label' value='Revisar'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+    	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001595174856075*7938583813627151337</id>
+		<updated>2021-01-03T18:59:45Z</updated>
+		<content></content>
+		<apps:property name='from' value='marketingmichelin@michelin.com'/>
+		<apps:property name='label' value='Revisar'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+    	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001595174856075*7938583813627151337</id>
+		<updated>2021-01-03T18:59:45Z</updated>
+		<content></content>
+		<apps:property name='from' value='openbank@news.openbank.es'/>
+		<apps:property name='label' value='Revisar'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+    	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001595174856075*7938583813627151337</id>
+		<updated>2021-01-03T18:59:45Z</updated>
+		<content></content>
+		<apps:property name='from' value='Your-files@asuswebstorage.com'/>
+		<apps:property name='label' value='Revisar'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+    	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001595174856075*7938583813627151337</id>
+		<updated>2021-01-03T18:59:45Z</updated>
+		<content></content>
+		<apps:property name='from' value='visitscotland@emails.visitscotland.com'/>
+		<apps:property name='label' value='Revisar'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+    	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001595174856075*7938583813627151337</id>
+		<updated>2021-01-03T18:59:45Z</updated>
+		<content></content>
+		<apps:property name='from' value='visitscotland@emails.visitscotland.com'/>
+		<apps:property name='label' value='Revisar'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+    	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001595174856075*7938583813627151337</id>
+		<updated>2021-01-03T18:59:45Z</updated>
+		<content></content>
+		<apps:property name='from' value='newsletter@e.fiestadelcine.com'/>
+		<apps:property name='label' value='Revisar'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+    	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001595174856075*7938583813627151337</id>
+		<updated>2021-01-03T18:59:45Z</updated>
+		<content></content>
+		<apps:property name='from' value='remote-control@netop.com'/>
+		<apps:property name='label' value='Revisar'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+    	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001595174856075*7938583813627151337</id>
+		<updated>2021-01-03T18:59:45Z</updated>
+		<content></content>
+		<apps:property name='from' value='info@mail.ocaso.es'/>
+		<apps:property name='label' value='Revisar'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+    	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001595174856075*7938583813627151337</id>
+		<updated>2021-01-03T18:59:45Z</updated>
+		<content></content>
+		<apps:property name='from' value='xboxreps@engage.xbox.com'/>
+		<apps:property name='label' value='Revisar'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+    	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001595174856075*7938583813627151337</id>
+		<updated>2021-01-03T18:59:45Z</updated>
+		<content></content>
+		<apps:property name='from' value='wordpress@sv37.espaciowww.net'/>
+		<apps:property name='label' value='Revisar'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+    	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:z0000001595174856075*7938583813627151337</id>
+		<updated>2021-01-03T18:59:45Z</updated>
+		<content></content>
+		<apps:property name='from' value='info@l.s-travelclub.es'/>
+		<apps:property name='label' value='Revisar'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+    </feed>

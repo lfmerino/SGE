@@ -1,0 +1,27 @@
+# -*- coding: utf-8 -*- 
+# Part of Odoo. See LICENSE file for full copyright and licensing details. 
+from odoo import api, fields, models 
+from datetime import datetime 
+
+class dam1(models.Model): 
+    _name = 'ej.dam1' 
+    Id = fields.Integer(string='Id del registro', required=True) 
+ 
+    Nombre = fields.Text(string='Nombre de la empresa', required=True) 
+ 
+    NIF = fields.Text(string='NIF de la empresa', required=True) 
+ 
+    Idioma = fields.Text(string='Idioma', required=True) 
+ 
+    Calle = fields.Text(string='Calle', required=True) 
+ 
+    CP = fields.Text(string='Codigo Postal', required=True) 
+ 
+    Ciudad = fields.Text(string='Ciudad', required=True) 
+ 
+    Telefono = fields.Integer(string='Telefono de la empresa', required=True) 
+ 
+    Email = fields.Text(string='Email', required=True) 
+ 
+    web = fields.Text(string='Pagina web', required=True) 
+ 

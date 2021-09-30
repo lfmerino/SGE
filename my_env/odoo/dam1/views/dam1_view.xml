@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<odoo> 
+	<data>
+	<!-- Comentario en la Views --> 
+		<!--record id="view_res_partner_form" model="ir.ui.view"> 
+			<field name="name">ej.dam1.form</field> 
+		        <field name="model">ej.dam1</field> 
+		        <field name="arch" type="xml"> 
+		            <form string="Listado de Empresa"> 
+		                <group> 
+		                    <field name="id"/> 
+		                    <field name="name"/> 
+		                    <field name="vat"/> 
+		                    <field name="lang"/> 
+		                    <field name="street"/> 
+		                    <field name="zip"/> 
+		                    <field name="city"/> 
+		                    <field name="phone"/> 
+		                    <field name="email"/> 
+		                    <field name="website"/> 
+		                </group> 
+		            </form> 
+		        </field> 
+		    </record> 
+		     <record id="view_tree_dam1" model="ir.ui.view"> 
+		        <field name="name">ej.dam1.tree</field> 
+		        <field name="model">ej.dam1</field> 
+		        <field name="arch" type="xml"> 
+		           <tree> 
+		                    <field name="id"/> 
+		                    <field name="name"/> 
+		                    <field name="vat"/> 
+		                    <field name="lang"/> 
+		                    <field name="street"/> 
+		                    <field name="zip"/> 
+		                    <field name="city"/> 
+		                    <field name="phone"/> 
+		                    <field name="email"/> 
+		                    <field name="website"/> 
+
+		           </tree> 
+		        </field> 
+		    </record> 
+		    <record model="ir.actions.act_window" id="act_res_partner"> 
+		        <field name="name">dam1</field> 
+		        <field name="res_model">ej.dam1</field> 
+		        <field name="view_mode">tree,form</field> 
+		        <field name="view_id"  ref="view_tree_dam1" /> 
+		    </record--> 
+
+
+		<record id="empresa.empresa_list" model="ir.ui.view"> 
+			<field name="name">Lista de empresas</field>
+			<field name="model">res.partner</field> 
+		        <field name="arch" type="xml"> 
+		            <tree> 
+		                    <field name="id"/> 
+		                    <field name="name"/> 
+		                    <field name="vat"/> 
+		                    <field name="lang"/> 
+		                    <field name="street"/> 
+		                    <field name="zip"/> 
+		                    <field name="city"/> 
+		                    <field name="phone"/> 
+		                    <field name="email"/> 
+	                       	    <field name="website"/> 
+		               </tree> 
+		        </field> 
+		    </record> 
+
+		    <record model="ir.actions.act_window" id="empresas.action_empresa_window"> 
+			<field name="name">empresas windows</field>
+			<field name="res_model">res.partner</field>
+			<field name="view_mode">tree,form</field>
+		    </record>
+
+		<!--  Declaramos los menu --> 
+		<menuitem id="empresas.menu_root" name="Empresas"/> 
+		<menuitem id="empresas.menu_1" name="Mantenimiento" parent="empresas.menu_root"/> 
+		<menuitem id="empresas.menu_empresa_list" name="Empresas" parent="empresas_menu_1" action="aempresas.action_empresa_window"/> 
+	</data>
+</odoo> 
