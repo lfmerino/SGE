@@ -1,0 +1,248 @@
+#!/user/bin/env python 
+# -*- coding: utf-8 -*-
+
+import csv
+import modulos.FicheroCSV
+import modulos.BDpostgres
+import os
+import time
+# --------------------------------------------
+#       METODOS PRINCIPAL
+# --------------------------------------------
+def sacarApellidos(nom):
+	try:
+		pos = nom.index(' ') #posicion donde se los blancos
+		ape = nom[pos+1:len(nom)]#quita el nombre	
+		pos = ape.index(' ')
+		ape1 = ape[0:pos]#primer apellido
+		pos = ape.index(' ')
+		ape2 = ape[pos+1:len(ape)]
+		print ape2
+	except ValueError:
+		ape1 = ape #si no tiene segundo apellido hasta el final
+		ape2 = ''
+	return [ape1,ape2]
+	
+def crearLogin(nom):
+	try:
+		login = nom[0]
+		pos = nom.index(' ') #posicion donde se los blancos
+		ape = nom[pos+1:len(nom)]
+		pos = ape.index(' ')
+		ape = ape[0:pos]
+		login = login+ape
+
+	except ValueError:
+		login = login+ape #si no tiene segundo apellido hasta el final
+	return login.lower()
+	
+def crearAsignature(nom,sexo):
+	try:
+		if sexo=='H':
+			asignature ='Sr. '
+		else:
+			asignature ='Sra. '
+		#obtener apellido
+		pos = nom.index(' ') #posicion donde se los blancos
+		ape = nom[pos+1:len(nom)]
+		pos = ape.index(' ')
+		ape = ape[0:pos]
+		asignature = asignature+ape
+
+	except ValueError:
+		asignature = asignature+ape #si no tiene segundo apellido hasta el final
+	return asignature
+
+
+def comprobarUsuario(nom,email,sexo):
+
+	#COMPROBAR SI EXISTE EL USUARIO
+	nom_usu = db.Consulta("SELECT name FROM res_users WHERE name='"+ nom+"'" )
+	#print nom_usu
+	if nom_usu != nom:
+		InsertarUsuario(nom,email,sexo)
+	else:
+		ModificarUsuario(nom,email,sexo)
+
+def crearPassword(nom):
+	ps = nom[0]
+	try:
+	 	ape = sacarApellidos(nom)
+		ape1 = ape[0]
+		ape2 = ape[1]
+		ps = ps = ps +  time.strftime("%S") +ape1[1] +ape1[2].capitalize() +time.strftime("%M") + ape2[3] + '%'
+	except IndexError:	
+		ps = ps = ps +  time.strftime("%S")  +time.strftime("%M")  + '%'
+
+	return ps
+
+def InsertarUsuario(nom,email,sexo):
+	login = crearLogin(nom)
+	asignature = crearAsignature(nom,sexo)
+	password = crearPassword(nom)
+	#print password
+	
+	
+	sql = "INSERT INTO res_users (name, active, login, password, email, company_id ,create_uid, create_date, write_date, write_uid, menu_id, menu_tips,signature) VALUES ('"+nom+"', True, '"+login+"', '" +password+ "', '" +email+ "',1,1, current_date , current_date, 1, 1,FALSE,'"+ asignature+"')"
+	print "sql> " + sql
+	
+	print  "\t" + db.Consulta(sql) +' ' + nom
+	
+	
+def ModificarUsuario(nom,email,sexo):
+	
+	#obtener id para modificar el cliente si existe 
+	sql = "SELECT id FROM res_users WHERE name='"+ nom + "'"
+	id = db.Consulta(sql)
+	if id!='':	
+		login = crearLogin(nom)
+		signature = crearAsignature(nom,sexo)
+		password = crearPassword(nom)	
+		sql = "UPDATE res_users SET email='"+email+"',login='"+login+"', password='"+ password+"', signature='"+signature+"' WHERE id=" +id
+		#print "sql> " + sql
+		
+		print  db.Consulta(sql)  +' ' + nom
+	
+
+
+
+# --------------------------------------------
+#                 PRINCIPAL
+# --------------------------------------------
+
+print '\n======================================================'
+print '\tUSUARIOS'
+print '======================================================'
+
+print '-------------------------------------------------'
+print '\t CONECTAR CON LA BASE DE DATOS '
+print '-------------------------------------------------'
+'''
+dbname = raw_input('\tIntroduce nombre de la base de datos> ')
+user = raw_input('\tIntroduce usuario> ')
+host = raw_input('\tIntroduce host> ')
+password = raw_input('\tIntroduce contraseña> ')
+port = raw_input('\tIntroduce puerto> ')
+'''
+
+dbname='Libreria'
+user='postgres'
+host='10.22.100.44'
+#host ='192.168.1.76'
+password='virgi'
+port='5432'
+
+db = modulos.BDpostgres.BD()
+
+datos = db.CrearConexion(dbname,user,host,password,port)
+
+
+while datos==False:
+	print 'Datos no validos. Introducir datos correctos:'
+
+	dbname = raw_input('\tIntroduce nombre de la base de datos> ')
+	user = raw_input('\tIntroduce usuario> ')
+	host = raw_input('\tIntroduce host> ')
+	password = raw_input('\tIntroduce contraseña> ')
+	port = raw_input('\tIntroduce puerto> ')
+
+
+	datos = db.CrearConexion(dbname,user,host,password,port)
+print 'Conectado a la base de datos...'
+
+#Vble q voy a usar despues
+result=''
+op='s'#para entrar en el while
+
+while True:	
+	
+	if op=='S' or op=='s':
+		print '-------------------------------------------------'
+		print '\t FICHERO CON DATOS '
+		print '-------------------------------------------------'
+		'''
+		nom = raw_input('\tIntroduce nombre del fichero> ')
+		'''
+		nom ='usuarios.csv'
+		
+		directorioActual = '{0}'.format(os.getcwd()) + '/'+ nom
+		#print directorioActual
+		
+		if os.path.isfile(directorioActual): #metodo comprueba si el fichero existe
+			fic =  modulos.FicheroCSV.FicheroCSV(nom)
+			
+
+			res = raw_input('\t¿Desea visualizar el fichero? s/n> ')
+			if res=='s' or res=='S':
+				print '-------------------------------------------------'
+				print '\t VISUALIZR FICHERO '+ nom
+				print '-------------------------------------------------'
+				print fic.Leer()	
+				print '-------------------------------------------------'
+		
+
+		
+			res = raw_input('\t¿Desea insertar o modificar los usuarios? s/n> ')
+			if res=='s' or res=='S':
+				#obtener diccionario con contenido del fichero
+				dic = fic.convertirDiccionario()
+				for i in dic:
+					fila = dic[i]
+					comprobarUsuario(fila[0],fila[1],fila[2])
+
+		else:
+			print 'El fichero no existe'
+		print '-------------------------------------------------'
+	
+
+	else:
+		print 'FIN PROGRAMA\n'
+		
+		break
+
+	op = raw_input ("¿DESEA CONTINUAR? S/N: ")
+	print '======================================================\n'
+
+
+print '-------------------------------------------------'
+print '\t COSULTAR USUARIO '
+print '-------------------------------------------------'
+
+op='s'#para entrar en el while
+
+while True:	
+	
+	if op=='S' or op=='s':
+		print '-------------------------------------------------'
+		print '\t LISTADO DE USUARIOS '
+		print '-------------------------------------------------'
+		print  db.Consulta("SELECT name FROM res_users" )
+		
+		nom = raw_input ("\nIntroducir nombre de usuario> ")
+		res = db.ConsultaDic("SELECT name,signature,login,password FROM res_users WHERE name='"+ nom+"'" )
+		if res =='':
+			print 'No existe'
+		else:
+			print res
+			f = raw_input('\tIntroduce nombre del fichero> ')
+			ficUsu =  modulos.FicheroCSV.FicheroCSV(f)
+			ficUsu.Escribir(res) #añade al fichero no sobreescribe
+	
+			res = raw_input('\t¿Desea visualizar el fichero? s/n> ')
+			if res=='s' or res=='S':
+				print '\n==================================================='
+				print '\t VISUALIZR FICHERO '+ nom
+				print '==================================================='
+				print ficUsu.Leer()
+			print '===================================================\n'
+	
+
+	else:
+		print 'FIN PROGRAMA\n'
+		
+		break
+	op = raw_input ("¿DESEA CONTINUAR? S/N: ")
+	print '======================================================\n'
+
+db.CerrarConexion()
+
